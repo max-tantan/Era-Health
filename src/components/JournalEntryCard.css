@@ -1,0 +1,101 @@
+.journal-entry-card {
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-cards);
+  padding: var(--card-padding);
+  background-color: var(--color-cream-paper);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.journal-entry-card:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 24px 0px;
+}
+
+@media (hover: none) {
+  .journal-entry-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.journal-entry-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journal-entry-card__date {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+}
+
+.journal-entry-card__day {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-cocoa-ink);
+  opacity: 0.8;
+}
+
+.journal-entry-card__moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+}
+
+.journal-entry-card__mood-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4) var(--spacing-12);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-tags);
+  font-family: var(--font-geist);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  background-color: var(--color-dew-drop);
+}
+
+.journal-entry-card__story {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--leading-body-sm);
+  color: var(--color-cocoa-ink);
+  white-space: pre-wrap;
+}
+
+.journal-entry-card__story-empty {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  color: var(--color-charcoal);
+  opacity: 0.35;
+  font-style: italic;
+}
+
+.journal-entry-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding-top: var(--spacing-12);
+  border-top: 1px solid var(--color-charcoal);
+  opacity: 0.4;
+}
+
+.journal-entry-card__footer-icon {
+  color: var(--color-charcoal);
+}
+
+.journal-entry-card__footer-text {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  color: var(--color-charcoal);
+}

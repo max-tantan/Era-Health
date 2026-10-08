@@ -1,0 +1,46 @@
+.quick-mood {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-12);
+  justify-content: center;
+}
+
+.quick-mood__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-12) var(--spacing-16);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-cream-paper);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-charcoal);
+  transition: background-color 0.2s, transform 0.2s;
+  min-width: 72px;
+}
+
+.quick-mood__item:hover {
+  background-color: var(--color-dew-drop);
+  transform: translateY(-2px);
+}
+
+.quick-mood__icon {
+  display: block;
+}
+
+.quick-mood__label {
+  font-family: var(--font-geist);
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  opacity: 0.7;
+}
+
+@media (max-width: 399px) {
+  .quick-mood__item {
+    min-width: 60px;
+    padding: var(--spacing-8) var(--spacing-12);
+  }
+}

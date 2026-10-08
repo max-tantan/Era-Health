@@ -1,0 +1,109 @@
+.checkin-review {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+  padding: var(--spacing-32) 0;
+  max-width: 420px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+}
+
+.checkin-review__title {
+  font-family: var(--font-gelica);
+  font-size: var(--text-heading);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--leading-heading);
+  color: var(--color-cocoa-ink);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.checkin-review__card {
+  width: 100%;
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-cards);
+  padding: var(--card-padding);
+  background-color: var(--color-dew-drop);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.checkin-review__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.checkin-review__label {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+
+.checkin-review__moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+}
+
+.checkin-review__mood-tag {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4) var(--spacing-12);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-tags);
+  font-family: var(--font-geist);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  background-color: var(--color-cream-paper);
+}
+
+.checkin-review__story {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--leading-body-sm);
+  color: var(--color-cocoa-ink);
+  white-space: pre-wrap;
+}
+
+.checkin-review__story-empty {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  color: var(--color-charcoal);
+  opacity: 0.35;
+  font-style: italic;
+}
+
+.checkin-review__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-12);
+  width: 100%;
+}
+
+.checkin-review__back {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.checkin-review__back:hover {
+  opacity: 1;
+}

@@ -1,0 +1,83 @@
+.story-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  padding: var(--spacing-32) 0;
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.story-input__question {
+  font-family: var(--font-gelica);
+  font-size: var(--text-heading);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--leading-heading);
+  color: var(--color-cocoa-ink);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.story-input__hint {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+  text-align: center;
+  margin-top: calc(-1 * var(--spacing-16));
+}
+
+.story-input__textarea {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-cocoa-ink);
+  background-color: var(--color-dew-drop);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-20);
+  outline: none;
+  resize: none;
+  min-height: 160px;
+  line-height: 1.6;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+  width: 100%;
+}
+
+.story-input__textarea::placeholder {
+  color: var(--color-shadow-mist);
+  opacity: 0.6;
+  font-size: var(--text-body-sm);
+}
+
+.story-input__textarea:focus {
+  box-shadow: 0 0 0 3px rgba(255, 111, 30, 0.15);
+  border-color: var(--color-marker-orange);
+  background-color: var(--color-cream-paper);
+}
+
+.story-input__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-16);
+}
+
+.story-input__skip {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-8) var(--spacing-16);
+  transition: opacity 0.2s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.story-input__skip:hover {
+  opacity: 1;
+}

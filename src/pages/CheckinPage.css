@@ -1,18 +1,22 @@
 .checkin {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 80px);
-  max-height: calc(100vh - 80px);
+  min-height: calc(100dvh - 80px);
 }
 
 .checkin__header {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-4);
-  padding-bottom: var(--spacing-20);
+  padding-bottom: var(--spacing-16);
   border-bottom: 1px solid var(--color-charcoal);
-  opacity: 0.6;
   flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .checkin__header {
+    padding-bottom: var(--spacing-20);
+  }
 }
 
 .checkin__header-title {
@@ -28,6 +32,13 @@
   font-family: var(--font-gelica);
   font-size: var(--text-caption);
   color: var(--color-cocoa-ink);
+  opacity: 0.7;
+}
+
+.checkin__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkin__messages {
@@ -38,6 +49,13 @@
   gap: var(--spacing-16);
   padding: var(--spacing-24) 0;
   scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+  .checkin__messages {
+    gap: var(--spacing-20);
+    padding: var(--spacing-32) 0;
+  }
 }
 
 .typing-dots {
@@ -74,24 +92,21 @@
   border-radius: 20px;
 }
 
-.checkin__bottom {
+.checkin__input-area {
   flex-shrink: 0;
-  padding-top: var(--spacing-8);
+  padding-top: var(--spacing-12);
   border-top: 1px solid var(--color-charcoal);
-  opacity: 0.3;
   background-color: var(--color-cream-paper);
 }
 
-.checkin__input-wrapper {
-  position: sticky;
-  bottom: 0;
-  background-color: var(--color-cream-paper);
-  padding-bottom: var(--spacing-8);
+@media (min-width: 768px) {
+  .checkin__input-area {
+    padding-top: var(--spacing-16);
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .checkin {
-    height: calc(100vh - 68px);
-    max-height: calc(100vh - 68px);
+    min-height: calc(100dvh - 68px);
   }
 }

@@ -1,0 +1,45 @@
+.streak-tracker {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+  padding: var(--spacing-16);
+  border: 1.5px solid var(--color-charcoal);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-cream-paper);
+}
+
+.streak-tracker__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-marker-orange);
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.streak-tracker__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.streak-tracker__count {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-cocoa-ink);
+}
+
+.streak-tracker__count span {
+  color: var(--color-marker-orange);
+}
+
+.streak-tracker__desc {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  color: var(--color-charcoal);
+  opacity: 0.5;
+}
