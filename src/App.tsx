@@ -4,6 +4,8 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import CheckinPage from './pages/CheckinPage';
+import JournalPage from './pages/JournalPage';
+import InsightsPage from './pages/InsightsPage';
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/dashboard/check-in" element={<CheckinPage />} />
+        <Route path="/dashboard/jurnal" element={<JournalPage />} />
+        <Route path="/dashboard/wawasan" element={<InsightsPage />} />
       </Routes>
     </BrowserRouter>
   );
