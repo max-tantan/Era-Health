@@ -1,0 +1,10 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background-color: var(--color-cream-paper);
+}
+
+.dashboard-layout__content {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-32) var(--spacing-24);
+}

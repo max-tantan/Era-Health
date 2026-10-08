@@ -1,0 +1,10 @@
+.top-left-brand-mark {
+  position: absolute;
+  top: var(--spacing-16);
+  left: var(--spacing-16);
+  z-index: 10;
+}
+
+.top-left-brand-mark svg {
+  display: block;
+}

@@ -1,0 +1,8 @@
+.helper-info-block {
+  font-family: var(--font-gelica);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-cocoa-ink);
+  line-height: 1.5;
+  margin-top: var(--spacing-8);
+}

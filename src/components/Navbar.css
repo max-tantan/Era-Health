@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-12) var(--spacing-24);
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  text-decoration: none;
+  color: var(--color-charcoal);
+}
+
+.navbar__brand-icon {
+  display: block;
+}
+
+.navbar__brand-name {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-cocoa-ink);
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  list-style: none;
+}
+
+.navbar__menu-item {
+  font-family: var(--font-geist);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-charcoal);
+  text-decoration: none;
+  padding: var(--spacing-8) var(--spacing-16);
+  border-radius: var(--radius-tags);
+  transition: background-color 0.2s ease;
+}
+
+.navbar__menu-item:hover {
+  background-color: var(--color-dew-drop);
+}
+
+.navbar__menu-item--active {
+  background-color: var(--color-dew-drop);
+  font-weight: var(--font-weight-medium);
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+}
+
+.navbar__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-charcoal);
+  background-color: var(--color-dew-drop);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-gelica);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-charcoal);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar__avatar:hover {
+  box-shadow: var(--shadow-subtle);
+}
+
+@media (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: var(--spacing-12) var(--spacing-16);
+  }
+}

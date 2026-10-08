@@ -1,0 +1,10 @@
+.handwritten-caption {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  font-style: italic;
+  color: var(--color-marker-orange);
+  line-height: 1.4;
+  transform: rotate(-1deg);
+  display: inline-block;
+}

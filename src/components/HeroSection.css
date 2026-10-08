@@ -1,0 +1,133 @@
+.hero {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-16);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-64);
+  align-items: center;
+  width: 100%;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-24);
+}
+
+.hero__headline {
+  font-family: var(--font-gelica);
+  font-size: var(--text-display);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--leading-display);
+  color: var(--color-cocoa-ink);
+  text-transform: lowercase;
+  letter-spacing: normal;
+  max-width: 10ch;
+}
+
+.hero__body {
+  font-family: var(--font-gelica);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--leading-body);
+  color: var(--color-cocoa-ink);
+  max-width: 40ch;
+}
+
+.hero__highlight {
+  color: var(--color-marker-orange);
+  position: relative;
+  display: inline;
+}
+
+.hero__highlight-underline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  background-color: var(--color-marker-orange);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.hero__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__scene-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  max-width: 500px;
+  width: 100%;
+}
+
+.hero__scene-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero__stickers {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: flex-start;
+}
+
+.hero__sparkle-right {
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+}
+
+.hero__top-right-action {
+  position: absolute;
+  top: var(--spacing-16);
+  right: var(--spacing-16);
+  z-index: 10;
+}
+
+.hero__top-right-action a {
+  text-decoration: none;
+}
+
+.hero__left a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-40);
+  }
+
+  .hero__headline {
+    font-size: 56px;
+    max-width: 100%;
+  }
+
+  .hero__right {
+    order: -1;
+  }
+
+  .hero__scene-wrapper {
+    max-width: 380px;
+  }
+}
